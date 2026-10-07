@@ -5,9 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-width=1.0">
     <title>Professional Portfolio</title>
     <style>
-        body { font-family: Courier; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; color: #77c043; background-color: #414142;}
-        h1, h2 { color: #3a993d; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
-        ul { list-style-type: square; }
+        body { 
+              font-family: Courier new; 
+              max-width: 800px; 
+              margin: 0; 
+              padding: 2rem; 
+              line-height: 1.6; 
+              margin-right: auto;
+              color: #77c043; 
+              background-color: #414142;
+        }
+        
+        h1, h2 { 
+            color: #77c043; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 0.5rem; 
+        }
+        
+        ul { 
+            list-style-type: square; 
+        }
+        
         /* Styles all links on page */
         a {
             color: inherit;            /* Matches your body text color */
@@ -18,6 +36,11 @@
         a:visited {
             color: inherit;
         }
+        /* summary marker */
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -26,27 +49,27 @@
         <p>Computational Biology | Data Scientist</p>
     </header>
     
-    <section>
-        <h2>Objective</h2>
+    <details>
+        <summary>Objective</summary>
         <p>Ph.D. candidate seeking computational biology data science and data engineering roles. Passionate about pipeline automation, high-throughput data processing, interactive visualization, and open-source programming.</p>
-    </section>
+    </details>
 
-    <section>
-        <h2>Technical Proficiencies</h2>
+    <details>
+        <summary>Technical Proficiencies</summary>
         <ul>
             <li><strong>Programming:</strong> Python, R, Bash, Awk, JavaScript, SQL</li>
             <li><strong>Workflow Management:</strong> Nextflow, Snakemake, Groovy</li>
             <li><strong>Analysis & Visualization:</strong> Epigenomics, Hi-C, Micro-C, RNA-seq, ATAC-seq, ChIP-seq, single-cell, IGV</li>
         </ul>
-    </section>
+    </details>
 
-    <section>
-        <h2>Projects</h2>
+    <details>
+        <summary>Projects</summary>
         <ul>
             <li><strong>SONAR Data Quality Assurance:</strong> <a href="https://pypi.org/project/jukebox-hic/" target="_blank" rel="noopener noreferrer" color="7f5ca7">PyPi</a> package for rapid noise analysis in data matrices.</li>
             <li><strong>Interactive Genomics Plugin:</strong> <a href="https://github.com/treznicek/Interactive_Journal_Plugin" target="_blank" rel="noopener noreferrer" color="7f5ca7">Web extension</a> linking published journal articles to interactive dataset visualizations.</li>
             <li><strong>Pipeline Development:</strong> Scalable and containerized computational biology <a href="https://github.com/treznicek" target="_blank" rel="noopener noreferrer" color="7f5ca7">scripts</a> for reproducible genomic sequencing data.</li>
         </ul>
-    </section>
+    </details>
 </body>
 </html>
