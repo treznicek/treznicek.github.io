@@ -8,6 +8,16 @@
         body { font-family: Courier; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; color: #77c043; background-color: #414142;}
         h1, h2 { color: #3a993d; border-bottom: 1px solid #eee; padding-bottom: 0.5rem; }
         ul { list-style-type: square; }
+        /* Styles all links on page */
+        a {
+            color: inherit;            /* Matches your body text color */
+            text-decoration: underline; /* Ensures the underline is always visible */
+        }
+    
+        /* Keeps the color the same even after the user clicks the link */
+        a:visited {
+            color: inherit;
+        }
     </style>
 </head>
 <body>
@@ -33,9 +43,9 @@
     <section>
         <h2>Projects</h2>
         <ul>
-            <li><strong>SONAR Data Quality Assurance:</strong> <a href="https://pypi.org/project/jukebox-hic/">PyPi</a> package for rapid noise analysis in data matrices.</li>
-            <li><strong>Interactive Genomics Plugin:</strong> <a href="https://github.com/treznicek/Interactive_Journal_Plugin">Web extension</a> linking published journal articles to interactive dataset visualizations.</li>
-            <li><strong>Pipeline Development:</strong> Scalable and containerized computational biology <a href="https://github.com/treznicek">scripts</a> for reproducible genomic sequencing data.</li>
+            <li><strong>SONAR Data Quality Assurance:</strong> <a href="https://pypi.org/project/jukebox-hic/" target="_blank" rel="noopener noreferrer" color="7f5ca7">PyPi</a> package for rapid noise analysis in data matrices.</li>
+            <li><strong>Interactive Genomics Plugin:</strong> <a href="https://github.com/treznicek/Interactive_Journal_Plugin" target="_blank" rel="noopener noreferrer" color="7f5ca7">Web extension</a> linking published journal articles to interactive dataset visualizations.</li>
+            <li><strong>Pipeline Development:</strong> Scalable and containerized computational biology <a href="https://github.com/treznicek" target="_blank" rel="noopener noreferrer" color="7f5ca7">scripts</a> for reproducible genomic sequencing data.</li>
         </ul>
     </section>
 </body>
